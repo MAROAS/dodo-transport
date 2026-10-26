@@ -47,7 +47,7 @@
   <br>
   <p>Have questions or need assistance?<br> Fill out the form below to get in touch with our team.</p>
   <br>
-<form onsubmit="return false" action="https://formsubmit.co/PENDING-ACTIVATION" 
+<form action="https://script.google.com/macros/s/AKfycbwjCVEseOYBOFy8-96R2E6NCVzQ_2jHvUdzpHXAMoTNH6eNZwNxIdlTfApAk3riJriJCw/exec" 
       method="post" 
       class="ContactForm" 
       id="form">
@@ -56,27 +56,20 @@
   <h3>Contact Us</h3>
   <br>
  
-  <input type="text" name="name" required placeholder="Full Name">
+  <input type="text" name="name" required maxlength="100" autocomplete="name" placeholder="Full Name">
 
-  <input type="email" name="email" required placeholder="Email Address">
+  <input type="email" name="email" required maxlength="150" autocomplete="email" placeholder="Email Address">
 
-  <input type="text" name="phone" required placeholder="Phone Number">
+  <input type="tel" name="phone" required inputmode="tel" autocomplete="tel" maxlength="20" pattern="\s*(\+?61|0)\s*[2-478](\s*\d){8}\s*" title="Please enter an Australian phone number, for example 0412 345 678 or 07 3123 4567." placeholder="Phone Number (e.g. 0412 345 678)">
 
-  <textarea name="message" required placeholder="Your Message"></textarea>
+  <textarea name="message" required maxlength="1000" placeholder="Your Message"></textarea>
   
  
   
   <p style="font-size:.9rem;line-height:1.5;margin:10px 0">When you submit this form, your details are emailed to DODO using FormSubmit (formsubmit.co), a third-party form service. See the <a href="https://www.dodotransport.com.au/privacy.html">DODO Privacy Policy</a>.</p>
-  <p style="font-size:.95rem;line-height:1.5;margin:10px 0;font-weight:bold">Online requests are not open yet. Please call DODO on <a href="tel:+61415152099">0415 152 099</a> to book.</p>
-  <button type="submit" disabled aria-disabled="true" style="opacity:.45;cursor:not-allowed;filter:grayscale(1)">Send Message</button>
+  <button type="submit">Send Message</button>
 
   <!-- Hidden configuration fields -->
-  <input type="hidden" name="_next" value="https://booking.dodotransport.com.au/thanks.html">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_autoresponse" value="Thanks for your request to DODO Transport. A booking is not confirmed until DODO contacts you to confirm it. Questions? Call 0415 152 099.">
-
-  <input type="hidden" name="_subject" value="DODO contact message (booking.dodotransport.com.au)">
-  <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
   
 
   <!-- Honeypot anti‑bot field -->
@@ -99,7 +92,7 @@
 
   <div id="feedback"></div>
 
-  <form onsubmit="return false" action="https://formsubmit.co/PENDING-ACTIVATION" 
+  <form action="https://script.google.com/macros/s/AKfycbwjCVEseOYBOFy8-96R2E6NCVzQ_2jHvUdzpHXAMoTNH6eNZwNxIdlTfApAk3riJriJCw/exec" 
         method="POST" 
         class="ContactFormPortal" 
         id="bookingForm">
@@ -110,12 +103,12 @@
       <br>
 
       <!-- Contact Details -->
-      <input type="text" name="name" required placeholder="Full Name">
-      <input type="email" name="email" required placeholder="Email Address">
-      <input type="text" name="phone" required placeholder="Phone Number">
+      <input type="text" name="name" required maxlength="100" autocomplete="name" placeholder="Full Name">
+      <input type="email" name="email" required maxlength="150" autocomplete="email" placeholder="Email Address">
+      <input type="tel" name="phone" required inputmode="tel" autocomplete="tel" maxlength="20" pattern="\s*(\+?61|0)\s*[2-478](\s*\d){8}\s*" title="Please enter an Australian phone number, for example 0412 345 678 or 07 3123 4567." placeholder="Phone Number (e.g. 0412 345 678)">
 
       <!-- Message -->
-      <textarea name="message" required placeholder="Your Message"></textarea>
+      <textarea name="message" required maxlength="1000" placeholder="Your Message"></textarea>
 
     </div>
 
@@ -132,10 +125,10 @@
     </select>
 
     <label for="address">Your Current Address</label>
-    <input id="address" type="text" name="address" required placeholder="Enter your pickup location">
+    <input id="address" type="text" name="address" required maxlength="200" autocomplete="street-address" placeholder="Enter your pickup location">
 
     <label for="destination">Destination</label>
-    <input id="destination" type="text" name="destination" required placeholder="Where do you want to go?">
+    <input id="destination" type="text" name="destination" required maxlength="200" placeholder="Where do you want to go?">
 
     <!-- NEW: Date of Travel -->
     <label for="travelDate">Date of Travel</label>
@@ -147,15 +140,9 @@
 
     <!-- Submit Button -->
     <p style="font-size:.9rem;line-height:1.5;margin:10px 0">When you submit this form, your details are emailed to DODO using FormSubmit (formsubmit.co), a third-party form service. See the <a href="https://www.dodotransport.com.au/privacy.html">DODO Privacy Policy</a>.</p>
-    <p style="font-size:.95rem;line-height:1.5;margin:10px 0;font-weight:bold">Online requests are not open yet. Please call DODO on <a href="tel:+61415152099">0415 152 099</a> to book.</p>
-    <button type="submit" disabled aria-disabled="true" style="opacity:.45;cursor:not-allowed;filter:grayscale(1)">Submit Booking Request</button>
+    <button type="submit">Submit Booking Request</button>
 
     <!-- Hidden configuration fields -->
-    <input type="hidden" name="_next" value="https://booking.dodotransport.com.au/thanks.html">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_autoresponse" value="Thanks for your request to DODO Transport. A booking is not confirmed until DODO contacts you to confirm it. Questions? Call 0415 152 099.">
-    <input type="hidden" name="_subject" value="DODO booking request (booking.dodotransport.com.au)">
-    <input type="hidden" name="_blacklist" value="spammy pattern,banned term,phrase">
 
     <!-- Honeypot anti‑bot field -->
     <input type="text" name="_honey" style="display:none" aria-hidden="true" tabindex="-1">
@@ -252,6 +239,9 @@
       // Map starts on Brisbane. The device location is used only when the rider taps "Refresh Map",
       // and the pickup address is never filled in automatically.
       initMap(-27.4698, 153.0251, 'Brisbane (default map view)');
+      // Travel date: today or later (local date on this device)
+      const dateEl = document.getElementById('travelDate');
+      if (dateEl) { const t = new Date(); dateEl.min = new Date(t.getTime() - t.getTimezoneOffset() * 60000).toISOString().slice(0, 10); }
       const mapEl = document.getElementById('map');
       if (mapEl) {
         const note = document.createElement('div');
@@ -323,6 +313,13 @@
           if (submitBtn) {
             submitBtn.textContent = '⏳ Sending Request...';
             submitBtn.disabled = true;
+            setTimeout(function () {
+              if (submitBtn.disabled && !location.pathname.endsWith('thanks.html')) {
+                submitBtn.disabled = false; submitBtn.textContent = 'Submit Booking Request';
+                const fb = document.getElementById('feedback');
+                if (fb) { fb.textContent = 'Your request could not be confirmed as sent. Please check your connection and try again, or call DODO on 0415 152 099.'; fb.style.color = '#b00020'; }
+              }
+            }, 20000);
           }
         });
       }
@@ -428,4 +425,55 @@
     </div>
     <p style="margin-top:16px"><a href="https://www.dodotransport.com.au/" style="color:#e0be00">www.dodotransport.com.au</a> · <a href="https://www.dodotransport.com.au/privacy.html" style="color:#e0be00">Privacy Policy</a> · <a href="tel:0415152099" style="color:#e0be00">0415 152 099</a></p>
   </footer>
+<script>
+  // Coming back with the Back button: make the booking button usable again.
+  window.addEventListener('pageshow', function () { const b = document.querySelector('#bookingForm button[type="submit"]'); if (b && !b.hasAttribute('aria-disabled')) { b.disabled = false; b.textContent = 'Submit Booking Request'; } });
+</script>
+<script>
+  // DODO booking relay: sends the form in the background and shows the result on this page.
+  (function () {
+    var RELAY = "https://script.google.com/macros/s/AKfycbwjCVEseOYBOFy8-96R2E6NCVzQ_2jHvUdzpHXAMoTNH6eNZwNxIdlTfApAk3riJriJCw/exec";
+    var CALL = ' Or call DODO on 0415 152 099.';
+    function note(form, kind) {
+      var el = kind === 'booking' ? document.getElementById('feedback') : form.querySelector('.relay-feedback');
+      if (!el) { el = document.createElement('div'); el.className = 'relay-feedback'; el.style.cssText = 'margin:12px 0;font-weight:bold'; form.appendChild(el); }
+      el.setAttribute('role', 'status');
+      return el;
+    }
+    function wire(form, kind, idleText) {
+      if (!form) return;
+      var h = document.createElement('input'); h.type = 'hidden'; h.name = 'form'; h.value = kind; form.appendChild(h);
+      var sending = false;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (sending) return;                                   // double-tap protection
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        sending = true;
+        var btn = form.querySelector('button[type="submit"]');
+        var fb = note(form, kind);
+        if (btn) { btn.disabled = true; btn.textContent = kind === 'booking' ? '⏳ Sending Request...' : 'Sending...'; }
+        fb.style.color = '#1a4fb5'; fb.textContent = kind === 'booking' ? 'Sending your booking request...' : 'Sending your message...';
+        function done(ok, text) {
+          sending = false;
+          if (btn) { btn.disabled = false; btn.textContent = idleText; }
+          fb.style.color = ok ? '#0a7d2c' : '#b00020'; fb.textContent = text;
+        }
+        var ctl = window.AbortController ? new AbortController() : null;
+        var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 25000);
+        fetch(RELAY, { method: 'POST', body: new URLSearchParams(new FormData(form)), signal: ctl ? ctl.signal : undefined })
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            clearTimeout(timer);
+            if (d && d.ok) {
+              if (kind === 'booking') { location.href = 'thanks.html'; return; }
+              form.reset(); done(true, 'Thank you. Your message has been sent to DODO. We will get back to you soon.');
+            } else { done(false, ((d && d.error) || 'Your request could not be sent.') + CALL); }
+          })
+          .catch(function () { clearTimeout(timer); done(false, 'Your request could not be sent. Please check your connection and try again.' + CALL); });
+      });
+    }
+    wire(document.getElementById('bookingForm'), 'booking', 'Submit Booking Request');
+    wire(document.querySelector('form.ContactForm'), 'contact', 'Send Message');
+  })();
+</script>
 </body>
