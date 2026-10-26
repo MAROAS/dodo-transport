@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="logo.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DODO Booking</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div role="note" style="background:#0a0fb4;color:#fff;padding:10px 16px;text-align:center;font:15px/1.5 Arial,sans-serif;position:relative;z-index:9999">DODO online booking requests. For DODO ride options and the DODO app, visit <a href="https://www.dodotransport.com.au/" style="color:#fff;font-weight:bold;text-decoration:underline">www.dodotransport.com.au</a>. Questions? Call <a href="tel:0415152099" style="color:#fff;font-weight:bold">0415 152 099</a>.</div>
   <!-- Modern Header -->
   <header class="header">
     <div class="header-content">
       <img src="Dodologo.png" class="logo" alt="DODO Logo" />
       <nav class="nav-menu">
-        <a href="#bookingForm" class="nav-link">Services</a>
-        <a href="#bookingForm" class="nav-link">Destinations</a>
-        <a href="#form" class="nav-link">fill the form below to Book</a>
-        <a href="tel:0415152099" class="cta-button">📞 Call Now</a>
+        <a href="#bookingForm" class="nav-link">Book a ride</a>
+        <a href="https://www.dodotransport.com.au/" class="nav-link">DODO home</a>
+        <a href="tel:0415152099" class="cta-button">📞 0415 152 099</a>
       </nav>
     </div>
   </header>
@@ -24,123 +26,36 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="content-wrapper">
-      <h1>Your Price, Your Choice</h1>
-      <h4>Rideshare, Food Delivery & Freight Service where YOU set the price.<br>Our partners can accept or negotiate with you directly.</h4>
-    </div>
-
-<!-- Service Selection -->
-<section class="service-selection" id="services">
-  <div class="content-wrapper">
-    <h2>Choose Your Service</h2>
-    <p class="intro-text">Select the option that best suits your needs — flexible, affordable, and designed for convenience.</p>
-    
-    <div class="grid-container">
-      <div class="service-card" onclick="scrollToBooking('rideshare')">
-        <a href="#form" class="nav-link"> <img src="car.png" alt="Rideshare Service Icon">
-        <h3>🚗 Rideshare</h3></a>
-        <p>Enjoy comfortable rides at your price point. Set your fare and let drivers come to you.</p>
-      </div>
-      
-      <div class="service-card" onclick="scrollToBooking('delivery')">
-        <a href="#bookingForm" class="nav-link"> <img src="bag.png" alt="Delivery Service Icon"></a>
-        <h3>📦 Food & Delivery</h3>
-        <p>Fast and reliable delivery for meals, packages, and more. You decide the delivery fee.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  
-<!-- Service -->
-<section class="popular-destinations section-light" id="destinations">
-  <h2>Our Services</h2>
-  
-  <div class="destination-grid">
-    <div class="destination-card">
-      <h3>DODO Travel</h3>
-      <a href="file4.html">Learn More</a>
-    </div>
-
-    <div class="destination-card">
-      <h3>Negotiate Your Fare</h3>
-      <a href="file5.html">Suggest Your Fare</a>
-    </div>
-
-    <div class="destination-card">
-      <h3>DODO Express</h3>
-      <a href="file3.html">Learn More</a>
-    </div>
-
-
-    <div class="destination-card">
-      <h3>DODO Max and Premium Service</h3>
-      <a href="file1.html">Choose Your Service</a>
-    </div>
-
-    <div class="destination-card">
-      <h3>Become a Driver</h3>
-      <a href="file0.html">View Driver Requirements</a>
-    </div>
-  </div>
-
-      <!--- Driver --->
-  <img src="3D-DODO.png" alt="Drive with DODO" style="width:100%; max-width:900px; height: 500px; display:block; margin: 1rem auto;">
-
-  </section>
-
-
-  <!-- Delivery Services Section -->
-  <section class="delivery-services section-dark">
-    <div class="content-wrapper">
-      <h2>Delivery Services Available</h2>
-      <div class="service-grid">
-        <div class="service-item">
-          <h3>📦 Package Delivery</h3>
-          <p>Same-day delivery for packages and documents</p>
-        </div>
-        <div class="service-item">
-          <h3>🏠 Moving Services</h3>
-          <p>House and office relocations made easy</p>
-        </div>
-        <div class="service-item">
-          <h3>🎯 Custom Delivery</h3>
-          <p>Special items and custom requests</p>
-        </div>
-      </div>
+      <h1>DODO Online Booking</h1>
+      <h4>Rideshare in Queensland.<br>Send a booking request and DODO will contact you to confirm it.</h4>
+      <a href="#bookingForm" class="cta-button">Book a ride</a>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section class="quick-contact section-light">
     <div class="content-wrapper">
-      <h2>Need Immediate Service?</h2>
-      <p class="p1">Call us directly for urgent bookings and immediate assistance</p>
-      <a href="tel:0415152099" class="phone-button">📞 0415152099</a>
+      <h2>Questions about a booking?</h2>
+      <p class="p1">Call DODO on 0415 152 099.</p>
+      <a href="tel:0415152099" class="phone-button">📞 0415 152 099</a>
       
     </div>
   </section>
 
-  <!-- Customer Testimonials -->
-  <section class="testimonials section-light">
-    <div class="content-wrapper">
-      <img src="DodoCar.png" style="max-width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" alt="Happy Customers">
-    </div>
-  </section>
-  
+  <!-- Contact Form -->
+  <h1>Contact DODO Transport</h1>
   <br>
-    <br>
-    <br>
-    <br>
-  
-  
-<form action="https://formsubmit.co/selsogroup@gmail.com" 
+  <p>Have questions or need assistance?<br> Fill out the form below to get in touch with our team.</p>
+  <br>
+<form onsubmit="return false" action="https://formsubmit.co/PENDING-ACTIVATION" 
       method="post" 
       class="ContactForm" 
       id="form">
 
+ <!-- Contact Details -->
   <h3>Contact Us</h3>
-
+  <br>
+ 
   <input type="text" name="name" required placeholder="Full Name">
 
   <input type="email" name="email" required placeholder="Email Address">
@@ -151,15 +66,16 @@
   
  
   
-  <button type="submit">Send Message</button>
+  <p style="font-size:.9rem;line-height:1.5;margin:10px 0">When you submit this form, your details are emailed to DODO using FormSubmit (formsubmit.co), a third-party form service. See the <a href="https://www.dodotransport.com.au/privacy.html">DODO Privacy Policy</a>.</p>
+  <p style="font-size:.95rem;line-height:1.5;margin:10px 0;font-weight:bold">Online requests are not open yet. Please call DODO on <a href="tel:+61415152099">0415 152 099</a> to book.</p>
+  <button type="submit" disabled aria-disabled="true" style="opacity:.45;cursor:not-allowed;filter:grayscale(1)">Send Message</button>
 
   <!-- Hidden configuration fields -->
-  <input type="hidden" name="_next" value="https://www.dodotransport.com.au/thanks.html">
+  <input type="hidden" name="_next" value="https://booking.dodotransport.com.au/thanks.html">
   <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_autoresponse" value="Thanks for contacting DODO Transport. We will get back to you shortly.">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_subject" value="New submission!">
-  <input type="hidden" name="_cc" value="maleunda12@gmail.com">
+  <input type="hidden" name="_autoresponse" value="Thanks for your request to DODO Transport. A booking is not confirmed until DODO contacts you to confirm it. Questions? Call 0415 152 099.">
+
+  <input type="hidden" name="_subject" value="DODO contact message (booking.dodotransport.com.au)">
   <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
   
 
@@ -171,38 +87,82 @@
 
     <br>
     <br>
-  <h1>DODO Booking Portal</h1>
-  <br>
  
-  <br>
 
+    <h1>DODO Booking Portal</h1>
+    <p>Use the form below to request a DODO ride. <br>Send us your trip details and DODO will contact you by phone or email to confirm your booking and fare. A booking is a request until DODO confirms it. No payment is taken on this website.</p>
+<br>
 
+<div class="container">
 
-  <div class="container">
-    <h2>Book Your Service</h2>
-    
-    <div id="feedback"></div>
-    
-    <form  action="https://formsubmit.co/selsogroup@gmail.com" method="POST" id="bookingForm">
-      <label for="serviceType">Select Service</label>
-      <select name="serviceType" id="serviceType" required>
-        <option value="">-- Choose --</option>
-        <option value="rideshare">Rideshare</option>
-        <option value="food">Food Delivery</option>
-        <option value="freight">Freight Service</option>
-      </select>
+  <h2>Book Your Service</h2>
 
-      <label for="address">Your Current Address</label>
-      <input  id="address" type="text" name="address"required placeholder="Enter your pickup location" />
+  <div id="feedback"></div>
 
-      <label for="destination">Destination</label>
-      <input id="destination" type="text" name="destination" required placeholder="Where do you want to go?" />
+  <form onsubmit="return false" action="https://formsubmit.co/PENDING-ACTIVATION" 
+        method="POST" 
+        class="ContactFormPortal" 
+        id="bookingForm">
 
-      <label for="range">Your Offer Amount ($)</label>
-      <input  id="range" type="number" min="1" max="1000" name="range" required placeholder="Enter your offer" />
+    <div class="contactUs">
 
-      <button type="submit">Submit Booking Request</button>
-    </form>
+      <h3>Fill in your details</h3>
+      <br>
+
+      <!-- Contact Details -->
+      <input type="text" name="name" required placeholder="Full Name">
+      <input type="email" name="email" required placeholder="Email Address">
+      <input type="text" name="phone" required placeholder="Phone Number">
+
+      <!-- Message -->
+      <textarea name="message" required placeholder="Your Message"></textarea>
+
+    </div>
+
+    <!-- Booking Section -->
+    <label for="serviceType">Ride option</label>
+    <select name="serviceType" id="serviceType" required>
+      <option value="">-- Choose --</option>
+      <option value="DODO Priority">DODO Priority</option>
+      <option value="DODO X">DODO X</option>
+      <option value="DODO Economy">DODO Economy</option>
+      <option value="DODO Comfort">DODO Comfort</option>
+      <option value="DODO BUSINESS">DODO BUSINESS</option>
+      <option value="DODO Premium">DODO Premium</option>
+    </select>
+
+    <label for="address">Your Current Address</label>
+    <input id="address" type="text" name="address" required placeholder="Enter your pickup location">
+
+    <label for="destination">Destination</label>
+    <input id="destination" type="text" name="destination" required placeholder="Where do you want to go?">
+
+    <!-- NEW: Date of Travel -->
+    <label for="travelDate">Date of Travel</label>
+    <input id="travelDate" type="date" name="travelDate" required>
+
+    <!-- NEW: Time of Travel -->
+    <label for="travelTime">Time of Travel</label>
+    <input id="travelTime" type="time" name="travelTime" required>
+
+    <!-- Submit Button -->
+    <p style="font-size:.9rem;line-height:1.5;margin:10px 0">When you submit this form, your details are emailed to DODO using FormSubmit (formsubmit.co), a third-party form service. See the <a href="https://www.dodotransport.com.au/privacy.html">DODO Privacy Policy</a>.</p>
+    <p style="font-size:.95rem;line-height:1.5;margin:10px 0;font-weight:bold">Online requests are not open yet. Please call DODO on <a href="tel:+61415152099">0415 152 099</a> to book.</p>
+    <button type="submit" disabled aria-disabled="true" style="opacity:.45;cursor:not-allowed;filter:grayscale(1)">Submit Booking Request</button>
+
+    <!-- Hidden configuration fields -->
+    <input type="hidden" name="_next" value="https://booking.dodotransport.com.au/thanks.html">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_autoresponse" value="Thanks for your request to DODO Transport. A booking is not confirmed until DODO contacts you to confirm it. Questions? Call 0415 152 099.">
+    <input type="hidden" name="_subject" value="DODO booking request (booking.dodotransport.com.au)">
+    <input type="hidden" name="_blacklist" value="spammy pattern,banned term,phrase">
+
+    <!-- Honeypot anti‑bot field -->
+    <input type="text" name="_honey" style="display:none" aria-hidden="true" tabindex="-1">
+
+  </form>
+</div>
+
 
 <br>
 
@@ -216,11 +176,11 @@
           </div>
           <div id="map"></div>
         </div>
-      </div>  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      </div>  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     let map, userLat, userLon;
 
-    function initMap(lat, lon) {
+    function initMap(lat, lon, label) {
       try {
         userLat = lat;
         userLon = lon;
@@ -248,7 +208,7 @@
         
         // Add marker for user location
         L.marker([lat, lon]).addTo(map)
-          .bindPopup('📍 Your Current Location')
+          .bindPopup(label || '📍 Your Current Location')
           .openPopup();
           
         console.log('Map initialized successfully');
@@ -289,61 +249,14 @@
         }
       }
       
-      // Initialize map with geolocation
-      if (navigator.geolocation) {
-        console.log('Requesting geolocation...');
-        navigator.geolocation.getCurrentPosition(
-          function(position) {
-            console.log('Geolocation success:', position.coords);
-            const lat = position.coords.latitude;
-            const lon = position.coords.longitude;
-            initMap(lat, lon);
-
-            // Auto-fill address if possible
-            fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`)
-              .then(response => response.json())
-              .then(data => {
-                const addressField = document.getElementById('address');
-                if (addressField && data.display_name) {
-                  addressField.value = data.display_name;
-                }
-              })
-              .catch(error => console.log('Reverse geocoding error:', error));
-          },
-          function(error) {
-            console.log('Geolocation error:', error);
-            // Initialize map with default location (Brisbane, Australia)
-            const defaultLat = -27.4698;
-            const defaultLon = 153.0251;
-            initMap(defaultLat, defaultLon);
-            
-            // Show message about location
-            const mapContainer = document.getElementById('map');
-            if (mapContainer) {
-              const notice = document.createElement('div');
-              notice.innerHTML = '<small style="color: #666; text-align: center; display: block; margin-top: 5px;">📍 Default location shown. Enable location access for better service.</small>';
-              mapContainer.parentNode.insertBefore(notice, mapContainer.nextSibling);
-            }
-          },
-          {
-            enableHighAccuracy: true,
-            timeout: 10000,
-            maximumAge: 300000
-          }
-        );
-      } else {
-        console.log('Geolocation not supported');
-        // Initialize map with default location
-        const defaultLat = -27.4698;
-        const defaultLon = 153.0251;
-        initMap(defaultLat, defaultLon);
-        
-        const mapContainer = document.getElementById('map');
-        if (mapContainer) {
-          const notice = document.createElement('div');
-          notice.innerHTML = '<small style="color: #666; text-align: center; display: block; margin-top: 5px;">📍 Geolocation not available. Showing Brisbane area.</small>';
-          mapContainer.parentNode.insertBefore(notice, mapContainer.nextSibling);
-        }
+      // Map starts on Brisbane. The device location is used only when the rider taps "Refresh Map",
+      // and the pickup address is never filled in automatically.
+      initMap(-27.4698, 153.0251, 'Brisbane (default map view)');
+      const mapEl = document.getElementById('map');
+      if (mapEl) {
+        const note = document.createElement('div');
+        note.innerHTML = '<small style="color:#666;text-align:center;display:block;margin-top:5px;">Tap "Refresh Map" to show your location on the map. Your pickup address is not filled in automatically.</small>';
+        mapEl.parentNode.insertBefore(note, mapEl.nextSibling);
       }
     };
 
@@ -352,10 +265,9 @@
       const serviceType = document.getElementById('serviceType').value;
       const address = document.getElementById('address').value.trim();
       const destination = document.getElementById('destination').value.trim();
-      const range = document.getElementById('range').value;
       const feedback = document.getElementById('feedback');
 
-      if (!serviceType || !address || !destination || !range) {
+      if (!serviceType || !address || !destination) {
         event.preventDefault();
         feedback.textContent = 'Please fill out all fields.';
         feedback.style.color = 'red';
@@ -376,44 +288,18 @@
               const destLon = parseFloat(data[0].lon);
               L.marker([destLat, destLon]).addTo(map).bindPopup('Destination').openPopup();
 
-              if (serviceType === 'rideshare' || serviceType === 'freight') {
+              if (serviceType) {
                 // Add route visualization if possible
                 if (userLat && userLon) {
                   const coords = [[userLat, userLon], [destLat, destLon]];
                   L.polyline(coords, { color: 'blue' }).addTo(map);
                 }
-              } else if (serviceType === 'food') {
-                L.circle([destLat, destLon], {
-                  radius: 1000,
-                  color: 'orange',
-                  fillOpacity: 0.3
-                }).addTo(map).bindPopup('Delivery Zone');
               }
             }
           })
           .catch(error => console.log('Geocoding error:', error));
       }
     });
-
-    // Service card click handlers
-    function scrollToBooking(serviceType) {
-      // Scroll to booking section
-      document.getElementById('booking').scrollIntoView({ 
-        behavior: 'smooth' 
-      });
-      
-      // Pre-select the service type
-      setTimeout(() => {
-        const serviceSelect = document.getElementById('serviceType');
-        if (serviceSelect) {
-          if (serviceType === 'rideshare') {
-            serviceSelect.value = 'rideshare';
-          } else if (serviceType === 'delivery') {
-            serviceSelect.value = 'food';
-          }
-        }
-      }, 1000);
-    }
 
     // Smooth scrolling for navigation links
     document.addEventListener('DOMContentLoaded', function() {
@@ -531,89 +417,15 @@
   <br>
   <br>
   <br>
-  <!-- Service Tiers Section -->
-  <section class="service-tiers">
-    <div class="content-wrapper">
-  
-      <h2>DODO Ride Service Tiers</h2>
-      
-      <div class="dodo">
-
-     <div class="service1">
-      <h3>Business Class</h3>
-        <p>Executive-level service</p>
-        <p>premium vehicles</p>
-        <p>corporate travel </p>
-        <p>VIP clients.</p>
-      </div>
-      
-      <div class="service2">
-      <h3>Premium</h3>
-        <p>High-end comfort</p>
-        <p> top-tier vehicles and experienced drivers</p> 
-      </div>
-
-      <div class="service3">
-      <h3>Comfort</h3> 
-        <p>Spacious, clean, and reliable rides</p> 
-        <p>everyday travel with extra legroom and amenities</p>.
-      </div>
-
-      <div class="service4">
-      <h3>Pool</h3> 
-        <p>Affordable shared rides</p> 
-        <p>budget-conscious travelers.</p>
-      </div>
-
-      <div class="service5">
-      <h3>Reservation Service</h3>
-        <p>Pre-book your ride in advance</p>
-        <p>guaranteed availability and peace of mind</p> 
-        <p>Ideal for during peak hours</p>
-        <p>airport transfers.</p>
-      </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- Popular Destinations Section -->
-  <section class="popular-destinations section-light" id="destinations">
-    <div class="content-wrapper">
-      <h2>Popular Travel Destinations</h2>
-      <div class="destination-grid">
-        <div class="destination-card">
-          <h3>Gold Coast</h3>
-          <p>Beach paradise awaits your arrival</p>
-        </div>
-        <div class="destination-card">
-          <h3>Sunshine Coast Airport</h3>
-          <p>Quick and reliable airport transfers</p>
-        </div>
-        <div class="destination-card">
-          <h3>Brisbane Airport</h3>
-          <p>Professional airport service</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<footer style="margin-top: 40px; padding: 20px; background-color: #1b2193; color: #e0be00;">
+  <footer style="margin-top: 40px; padding: 20px; background-color: #1b2193; color: #e0be00;">
   <h2>Social media</h2>
   <br>
   <br>
   <div class="social-icons">
-    <a href="https://www.tiktok.com/@dodotransport?lang=en-GB" target="_blank" rel="noopener noreferrer" class="social-link" data-platform="Follow us on Twitter">
-      <img src="twitter.jpeg" width="70px" alt="Twitter" style="border-radius: 50%;">
-    </a>
-    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" data-platform="Follow us on Instagram">
-      <img src="instagram.jpeg" width="70px" alt="Instagram" style="border-radius: 50%;">
-    </a>
-    <a href="https://www.tiktok.com/@dodotransport?lang=en-GB" target="_blank" rel="noopener noreferrer" class="social-link" data-platform="Like us on Facebook">
-      <img src="facebook.png" width="70px" alt="Facebook" style="border-radius: 50%;">
-    </a>
-    <a href="https://www.tiktok.com/@dodotransport?lang=en-GB" target="_blank" rel="noopener noreferrer" class="social-link" data-platform="Follow us on TikTok">
-      <img src="tiktok.png" width="70px" alt="TikTok" style="border-radius: 50%;">
-    </a>
-  </div>
-</footer>
+      <a href="https://www.tiktok.com/@dodotransport?lang=en-GB" target="_blank" rel="noopener noreferrer" class="social-link" data-platform="Follow us on TikTok">
+        <img src="tiktok.png" width="70" alt="DODO on TikTok" style="border-radius: 50%;">
+      </a>
+    </div>
+    <p style="margin-top:16px"><a href="https://www.dodotransport.com.au/" style="color:#e0be00">www.dodotransport.com.au</a> · <a href="https://www.dodotransport.com.au/privacy.html" style="color:#e0be00">Privacy Policy</a> · <a href="tel:0415152099" style="color:#e0be00">0415 152 099</a></p>
+  </footer>
 </body>
